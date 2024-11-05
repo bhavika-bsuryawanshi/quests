@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+
+    <!-- head -->
+    <head>
+        <title> home </title>
+        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+        <script src="script.js" defer> </script>
+    </head>
+
+     <!-- navbar -->
+    <nav>
+        <ul>
+            <li> <a href="home.html"> Home </a> </li>
+            <li> <a href="quests.html"> Quests </a> </li>
+            <li> <a href="pomodoro.html"> Pomodoro </a> </li>
+            <li> <a href="rules.html"> Rules </a> </li>
+            <li> <a href="prototype.html"> Prototype </a> </li>
+            <li> Streak: # </li>
+        </ul>
+    </nav>
+
+     <!-- body -->
+     <body>
+
+        <!-- title -->
+        <header>
+            <hr> 
+            <section>
+                <h1> Welcome Home, [user]. </h1>
+                <button id="newgoal">Enter New Goal</button>
+            </section>
+            <hr> 
+        </header>
+
+        <section> 
+
+            <!-- checklist (list) -->
+            <div id="tasks"> 
+
+                <!-- general goals -->
+                <h2> your goals: </h2>
+                
+                <h4> missions: </h4>
+                <ul id="mainMissions"> </ul>
+                <h4> side quests: </h4>
+                <ul id="mainSideQuests"> </ul>
+                <h4> habits: </h4>
+                <ul id="mainHabits"> </ul>
+
+                <!-- today's tasks -->
+                <h2> today's tasks: </h2>
+                <ul id="todaysTasks"> 
+                </ul>
+
+                <!-- completed tasks (list) -->
+                <h2> completed tasks: </h2>
+                <ul id="completedTasks"> 
+                </ul>
+
+            </div>
+
+            <!-- collectibles (images) -->
+            <div id="collect">
+                <h2> collectibles: </h2>
+
+                <!-- unlocked -->
+                <h3> unlocked: </h3>
+                <ul> 
+                    <li> <img src="img/comingsoon.png" class="collectimg"> </li>
+                    <li> <img src="img/comingsoon.png" class="collectimg"> </li>
+                    <li> <img src="img/comingsoon.png" class="collectimg"> </li>
+                    <li> <img src="img/comingsoon.png" class="collectimg"> </li>
+                </ul> 
+
+                <!-- locked -->
+                <h3> locked: </h3>
+                <ul> 
+                    <li> <img src="img/comingsoon.png" class="collectimg"> </li>
+                    <li> <img src="img/comingsoon.png" class="collectimg"> </li>
+                    <li> <img src="img/comingsoon.png" class="collectimg"> </li>
+                    <li> <img src="img/comingsoon.png" class="collectimg"> </li>
+                </ul> 
+            </div>
+
+        </section>
+
+        <hr>
+        <h2> Enter New Goal </h2>
+
+        <section>
+            <div> 
+                <h3> Select Type and Name of Goal </h3>
+                <p> Unsure about which one to choose? Visit the Rules page! </p>
+
+                <label for="goalType">Select Goal Type:</label>
+                <select id="goalType">
+                <option value="" disabled selected>Select Goal Type</option>
+                <option value="mission">Mission</option>
+                <option value="sideQuest">Side Quest</option>
+                <option value="habit">Habit</option>
+                </select>
+                <br><br>
+                <button id="submitGoal">Submit Goal Type</button>
+                <br><br>
+
+                <label for="goalName"> Enter your general goal here: </label>
+                <input type="text" name="goalName" value="Enter Here" id="goalName">
+                <button id="submitGoalName"> Submit </button>
+
+            </div>
+
+            <div>
+                <h3> Enter Actionable Tasks </h3>
+                <ul>
+                    <li> If you selected Mission/Side Quest, list all the small, actionable steps you need to take and the duration and deadline. </li>
+                    <li> If you selected Habit, set a specific, actionable task that can repeated daily and set its duration. </li>
+                </ul>
+                <p> EXAMPLE: this is a sample task - 30 min </p>
+                
+                <p> Please enter as many tasks as you need: </p>
+                <input type="text" name="taskMSQ" value="Enter Here" id="enterTaskMSQ">
+                <button id="submitTasksMSQ"> Submit </button>
+            </div>
+
+        </section>
+
+    </body>
+
+</html>
