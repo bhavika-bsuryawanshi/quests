@@ -1,0 +1,159 @@
+* {
+    font-family: 'EB Garamond', 'Times New Roman', serif;
+}
+
+body {
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+/* navbar css */ 
+
+nav {
+    display: flex;
+    background-color: #0b325b;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    z-index: 1; 
+    height: 50px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 2px #5a89ab solid;
+    font-weight: bold;
+    background-color: #b8d2ec;
+}
+
+nav ul li:hover {
+    background-color: #3d6b9d;
+}
+
+li:hover a {
+    color: white; 
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* headers css */ 
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bolder;
+    color: #5a89ab;
+}
+
+h2 {
+    color: #0b325b;
+    font-style: italic;
+}
+
+h3, figcaption {
+    font-family: 'Times New Roman', Times, serif;
+    color: #0b325b;
+    font-style: italic;
+    font-size: 20px;
+}
+
+h4 {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* flexbox css */ 
+
+section {
+    display: flex;
+    justify-content: space-between;
+}
+
+figure {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* id css */
+
+#collect ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#tasks {
+    margin-left: 15px;
+}
+
+#collect ul li {
+    list-style-type: none;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+
+p, #tasks ul li {
+    font-size: 17px;
+}
+
+button {
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #b8d2ec;
+    color: black;
+    font-weight: bolder;
+}
+
+button:hover {
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #5a89ab;
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+#link a {
+    font-style: italic;
+    font-weight: bolder;
+    color: #0b325b;
+}
+
+#link a:hover {
+    font-style: italic;
+    font-weight: bolder;
+    color: #5a89ab;
+}
+
+#examples ul ul {
+    border: 1px solid black;
+    margin-right: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#examples ul li {
+    margin-bottom: 10px;
+}
+
+.bold {
+    font-weight: bolder;
+    color:#0b325b
+}
+
+.collectimg {
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+}
